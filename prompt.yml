@@ -1,5 +1,5 @@
 # In Comparison of Local Variable vs Global Variable vs Variable-File vs Prompt Variable
-# The Priority Give to Local Variable
+# The Priority Give to Vars_files if you want to run vars prompt then comment or remove var_file: URL.yml
 # Simply Print message using debug module
 ---
 - name: Playbook1
