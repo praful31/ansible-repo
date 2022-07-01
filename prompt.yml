@@ -4,8 +4,8 @@
 ---
 - name: Playbook1
   hosts: all
-  vars:
-    URL: Global.Cloudblitz.in
+  # vars:
+  #   URL: Global.Cloudblitz.in
   
   tasks:
   - name: Print Message_1
