@@ -3,9 +3,9 @@
 ---
 - name: Playbook1
   hosts: all
-    vars:
+    var:
       URL: Global.Cloudblitz.in
-      
+  
   tasks:
   - name: Print Message_1
     debug:
