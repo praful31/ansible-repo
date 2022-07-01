@@ -1,4 +1,3 @@
----
 - name: Playbook1
   hosts: all
   tasks:
