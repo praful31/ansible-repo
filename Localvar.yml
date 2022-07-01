@@ -1,4 +1,5 @@
-# Local Variable
+# Priority check Local Variable vs Global Variable
+# And The Priority Give to Local Variable
 # Simply Print message using debug module
 ---
 - name: Playbook1
