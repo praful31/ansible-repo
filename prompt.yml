@@ -1,4 +1,4 @@
-# In Comparison of Local Variable vs Global Variable
+# In Comparison of Local Variable vs Global Variable vs Variable-File vs Prompt Variable
 # The Priority Give to Local Variable
 # Simply Print message using debug module
 ---
@@ -14,6 +14,8 @@
 
   vars:
     URL: Local.Cloudblitz.in
+
+  vars_files: URL.yml
 
   vars_prompt:
   - name: URL
