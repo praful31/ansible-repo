@@ -1,7 +1,6 @@
 # Global Variable
 # Simply Print message using debug module
 ---
----
 - name: Playbook1
   hosts: all
     vars:
