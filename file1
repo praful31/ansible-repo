@@ -1,8 +1,18 @@
-Hi Nagpur
-Hello World
-Praful
-Rahul
-Manoj
-Kumar
-Rohit
-Swap
+# In Comparison of Local Variable vs Global Variable
+# The Priority Give to Local Variable
+# Simply Print message using debug module
+---
+- name: Playbook1
+  hosts: all
+  vars:
+    URL: Global.Cloudblitz.in
+  
+  tasks:
+  - name: Print Message_1
+    debug:
+      msg: "{{URL}}"
+
+  vars:
+    URL: Local.Cloudblitz.in
+  
+  vars_files: URL.yml
