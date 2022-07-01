@@ -18,4 +18,4 @@
   vars_prompt:
   - name: URL
     prompt: "ENTER URL"   
-   # private: no
+    private: no
