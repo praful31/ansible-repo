@@ -1,5 +1,4 @@
-# In Comparison of Local Variable vs Global Variable vs Variable-File 
-# The Priority Give to Variable-File
+ # The Priority Give to hostfile after all are commented
 # Simply Print message using debug module
 ---
 - name: Playbook1
@@ -18,3 +17,4 @@
   # vars_files: URL.yml
 
 
+# In Output: print msg is avilable in hosts file
