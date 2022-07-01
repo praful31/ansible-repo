@@ -1,14 +1,12 @@
 # Global Variable
 # Simply Print message using debug module
 ---
+---
 - name: Playbook1
   hosts: all
     vars:
-      URL: Global.cloudblitz.in
+      URL: Global.Cloudblitz.in
   tasks:
   - name: Print Message_1
-    debug:
-      msg: "Welcome"
-  - name: Print messages_1
     debug:
       msg: "{{URL}}"
