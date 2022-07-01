@@ -16,3 +16,9 @@
     URL: Local.Cloudblitz.in
   
   vars_files: URL.yml
+
+
+#  TO Check CLI variable priority enter following cmd on CLI mode
+# ansible-playbook var_file.yml -e URL=Aws.in
+# In Comparison of Local Variable vs Global Variable vs Variable-File vs CLI 
+# The Priority Give to CLI
