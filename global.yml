@@ -6,7 +6,7 @@
   vars:
     URL: Global.Cloudblitz.in
   
-  # tasks:
+    tasks:
   # - name: Print Message_1
   #   debug:
   #     msg: "Welcome"
