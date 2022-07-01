@@ -8,4 +8,7 @@
   tasks:
   - name: Print Message_1
     debug:
-      msg: "URL"
+      msg: "Welcome"
+  - name: Print messages_1
+    debug:
+      msg: "{{URL}}"
