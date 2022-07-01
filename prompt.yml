@@ -15,7 +15,7 @@
   vars:
     URL: Local.Cloudblitz.in
 
-  vars_files: URL.yml
+  #vars_files: URL.yml
 
   vars_prompt:
   - name: URL
