@@ -1,0 +1,24 @@
+# In Comparison of Local Variable vs Global Variable vs Variable-File 
+# The Priority Give to Variable-File
+# Simply Print message using debug module
+---
+- name: Playbook1
+  hosts: all
+  # vars: 
+  #   URL: global.cloudblitz.in
+
+  # vars_files: url.yml
+
+  # vars_prompt:
+  # - name: URL
+  #   prompt: "ENTER URL"   
+  #   private: no
+
+  tasks:
+  - shell: ps >> hostname.txt
+  - name: Print messages_1
+    debug:
+      msg: "{{URL}}"
+    # vars: 
+    #   URL: local.cloudblitz.in   
+
