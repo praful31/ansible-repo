@@ -1,5 +1,5 @@
 - name: Playbook1
-  hosts: all
+  hosts: localhost
   tasks:
   - name: Print Message_1
     debug:
