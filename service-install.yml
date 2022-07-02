@@ -14,5 +14,5 @@
     - name: install services
       become: true
       apt:
-        name: httpd
+        name: yum
         state: latest
