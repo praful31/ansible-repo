@@ -15,9 +15,7 @@
   #   private: no
 
   tasks:
-  - shell: HI NAGPUR >> hostname.txt
   - shell: HI NAGPUR >> abc.txt
-
   
   - name: Print messages_1
     debug:
