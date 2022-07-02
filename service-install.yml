@@ -14,5 +14,5 @@
     - name: install services
       become: true
       apt:
-        name: tree
+        name: nginx
         state: latest
