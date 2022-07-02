@@ -1,9 +1,18 @@
-# Sample file of the first program of the YAML Language
-# Simply Print message using debug module
----
-- name: Playbook1
+- name: playbook - 3
   hosts: all
+  # gather_facts: no
   tasks:
-  - name: Print Host Details
-    debug:
-      msg: Domain name of ansible: "{{ansible domain}}"
+    - name: print the host details_1
+      debug:
+        msg: "Domain name of ansible: {{ansible_lo.features.rx_udp_gro_forwarding}}"
+      tags: domain
+
+    - name: print the host details_2
+      debug:
+        msg: "product_version name of ansible: {{ansible_product_version}}"
+      tags: prod_ver
+
+    - name: print the host details_3
+      debug:
+        msg: "Distribution name of ansible: {{ansible_distribution}}"  
+      tags: dist           
