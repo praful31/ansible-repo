@@ -2,17 +2,21 @@
   hosts: all
   # gather_facts: no
   tasks:
+  
+    - name: print the host details_3
+      debug:
+        msg: "Distribution name of ansible: {{ansible_distribution}}"  
+      tags: dist    
+
     - name: print the host details_1
       debug:
         msg: "Node name of ansible: {{ansible_nodename}}"
-      tags: domain
+      when: 
+      tags: nodename
 
     - name: print the host details_2
       debug:
         msg: "os family name of ansible: {{ansible_os_family}}"
-      tags: prod_ver
+      tags: os-id
 
-    - name: print the host details_3
-      debug:
-        msg: "Distribution name of ansible: {{ansible_distribution}}"  
-      tags: dist           
+           
