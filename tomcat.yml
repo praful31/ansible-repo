@@ -8,12 +8,12 @@
 
   tasks: 
   - name: install java
-    apt: 
+    yum: 
      name: openjdk-8-jdk
      state: present
      
   - name: download tomcat server packages
-    get_url: 
+    yum_url: 
       url: "{{tomcat_url}}"
       dest: /usr/local
 
