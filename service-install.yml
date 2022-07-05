@@ -15,5 +15,5 @@
     - name: install services
       become: true
       apt:
-        name: ftp
+        name: tomcat
         state: latest
