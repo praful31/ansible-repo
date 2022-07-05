@@ -4,5 +4,18 @@
   become: yes
   tasks: 
     - name: Install Apache web server
-      action: yum name=httpd state=latest
+      action: yum name=httpd 
+        state: latest
+
+    - name: index.html
+      copy:
+         content: "This is Ansible Playbook"
+         dest: /var/www/html/index.html   - name: restart httpd
+      
+    - name: restart httpd
+      service:
+          name: httpd
+          state: restarted
+          enabled: yes  
+        
       
