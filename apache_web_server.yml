@@ -1,0 +1,7 @@
+---
+- name: Playbook
+  hosts: all
+  tasks: 
+    - name: Install Apache web server
+      action: yum name=httpd state=installed
+      
