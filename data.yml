@@ -2,10 +2,11 @@
   hosts: all
   # gather_facts: no
   tasks:
-  
+
     - name: print the host details_3
       debug:
         msg: "Distribution name of ansible: {{ansible_distribution}}"  
+      when: ansible_distribution == "Centos"
       tags: dist    
 
     - name: print the host details_1
