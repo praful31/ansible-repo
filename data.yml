@@ -4,12 +4,12 @@
   tasks:
     - name: print the host details_1
       debug:
-        msg: "Domain name of ansible: {{ansible_lo.features.rx_udp_gro_forwarding}}"
+        msg: "Node name of ansible: {{ansible_nodename}}"
       tags: domain
 
     - name: print the host details_2
       debug:
-        msg: "product_version name of ansible: {{ansible_product_version}}"
+        msg: "os family name of ansible: {{ansible_os_family}}"
       tags: prod_ver
 
     - name: print the host details_3
