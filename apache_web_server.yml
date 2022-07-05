@@ -1,7 +1,8 @@
 ---
 - name: Playbook
   hosts: all
+  become: yes
   tasks: 
     - name: Install Apache web server
       action: yum name=httpd state=latest
-      become: yes
+      
