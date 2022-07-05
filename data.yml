@@ -11,8 +11,8 @@
 
     - name: print the host details_1
       debug:
-        msg: "Node name of ansible: {{eansible_nodenam}}"
-      when: ansible_nodenam == "ip-172-31-22-178.ap-southeast-1.compute.internal" or ansible_distribution == "Centos"
+        msg: "Node name of ansible: {{ansible_nodename}}"
+      when: ansible_nodename == "ip-172-31-22-178.ap-southeast-1.compute.internal" or ansible_distribution == "Centos"
       tags: nodename
 
     - name: print the host details_2
