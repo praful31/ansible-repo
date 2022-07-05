@@ -10,13 +10,13 @@
     - name: index.html
       copy:
          content: "This is Ansible Playbook"
-         dest: /var/www/html/index.html   - name: restart httpd
+         dest: /var/www/html/index.html
       
     - name: restart httpd
       service:
           name: httpd
           state: restarted
           enabled: yes
-           
+
         
       
