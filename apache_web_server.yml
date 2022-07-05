@@ -4,7 +4,8 @@
   become: yes
   tasks: 
     - name: Install Apache web server
-      action: yum -y name=httpd 
+      action: yum -y 
+        name: httpd 
         state: latest
 
     - name: index.html
