@@ -1,0 +1,16 @@
+# explore loops in playook
+---
+- name: loop Playbook
+  hosts: all
+  become: yes
+  tasks:
+    - name: Print Linux services Name
+      debug:
+        msg: "All Service Name In Linux are : {{item}}"
+      loop:
+        - HTTP
+        - SSH
+        - NFS
+        - FTP
+        - DNS
+        - DHCP
