@@ -3,8 +3,8 @@
   hosts: all
   become: true
   vars: 
-    tomcat_url: https://www-eu.apache.org/dist/tomcat/tomcat-9/v9.0.27/bin/apache-tomcat-9.0.27.tar.gz
-    tomcat_package: apache-tomcat-9.0.27
+    tomcat_url: https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.81/bin/apache-tomcat-8.5.81.tar.gz
+    tomcat_package: apache-tomcat-8.5.81.
   tasks: 
   - name: Update repos
     yum:
