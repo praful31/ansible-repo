@@ -1,0 +1,11 @@
+---
+- name: Copy Module
+  hosts: all
+  become: true
+  tasks: 
+    - name: copy file ansible server to nodes
+      copy:
+        src: sample.yml
+        dest: /mnt/file1.txt
+        
+
