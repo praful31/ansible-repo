@@ -1,0 +1,11 @@
+---
+- name: Setfacts Playbook
+  hosts: all
+  become: yes
+  tasks: 
+    - name: set fact
+      set_fact: URL=["www.google.com","cloudblitz.in","amazon.com"] city="Nagpur"
+
+    - name: Print Variable
+      debug:
+        msg: "{{URL}} {{city}}"
