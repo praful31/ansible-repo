@@ -12,7 +12,7 @@
       state: present
      
   - name: download tomcat server packages
-    yum_url: 
+    yum: 
       url: "{{tomcat_url}}"
       dest: /usr/local
 
