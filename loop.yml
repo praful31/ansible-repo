@@ -14,3 +14,13 @@
         - FTP
         - DNS
         - DHCP
+
+    - name: Install Packages
+      yum:
+        name: "{{item}}"
+        state: latest
+      loop:
+        - httpd
+        - vim 
+        - tree
+        - ansible
