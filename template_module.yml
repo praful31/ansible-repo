@@ -1,0 +1,9 @@
+---
+- name: Template Module Playbook
+  hosts: all
+  become: 1
+  tasks: 
+    - template:
+        src: sample.yml
+        dest: /mnt
+
