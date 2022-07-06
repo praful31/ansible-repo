@@ -1,4 +1,5 @@
 # explore loops in playook
+# Ansible loop is used to repeat any task or a part of code multiple times in an Ansible-playbook.
 ---
 - name: loop Playbook
   hosts: all
