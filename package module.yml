@@ -1,0 +1,9 @@
+---
+- name: Package Server Installation Playbook
+  hosts: all
+  become: yes
+  tasks:
+    - name: Package Installation
+      package:
+        name: httpd
+        state: present
