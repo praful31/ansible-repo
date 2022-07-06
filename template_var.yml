@@ -1,0 +1,11 @@
+---
+- name: Template Variable Module
+  hosts: all
+  become: yes
+  vars:
+    demo: ansible
+  tasks:
+    template:
+    src: simaple.yml
+    dest: /mnt
+    
