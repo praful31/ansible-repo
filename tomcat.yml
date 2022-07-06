@@ -16,18 +16,18 @@
       name: java-1.8.0-openjdk
       state: present
      
-  # - name: download tomcat server packages
-  #   yum_url : 
-  #     url: "{{tomcat_url}}"
-  #     dest: /usr/local
+  - name: download tomcat server packages
+    yum_url : 
+       url: "{{tomcat_url}}"
+       dest: /usr/local
 
-  # - name: extract tomcat packages
-  #   unarchive:  
-  #     src: /usr/local/{{tomcat_package}}.tar.gz
-  #     dest: /usr/local
-  #     remote_src: yes
+  - name: extract tomcat packages
+     unarchive:  
+       src: /usr/local/{{tomcat_package}}.tar.gz
+       dest: /usr/local
+       remote_src: yes
 
 
-  # - name: start tomcat services
-  #   shell: nohup /usr/local/{{tomcat_package}}/bin/startup.sh
+  - name: start tomcat services
+    shell: nohup /usr/local/{{tomcat_package}}/bin/startup.sh
 
