@@ -6,23 +6,28 @@
     tomcat_url: https://www-eu.apache.org/dist/tomcat/tomcat-9/v9.0.27/bin/apache-tomcat-9.0.27.tar.gz
     tomcat_package: apache-tomcat-9.0.27
   tasks: 
-  - name: install java
+  - name: Update repos
+    yum:
+      name: "*"
+      state: latest
+
+  - name: install java OpenJDK
     yum: 
-      name: java-1.8.0-openjdk-devel
+      name: java-1.8.0-openjdk
       state: present
      
-  - name: download tomcat server packages
-    yum_url: 
-      url: "{{tomcat_url}}"
-      dest: /usr/local
+  # - name: download tomcat server packages
+  #   yum_url : 
+  #     url: "{{tomcat_url}}"
+  #     dest: /usr/local
 
-  - name: extract tomcat packages
-    unarchive:  
-      src: /usr/local/{{tomcat_package}}.tar.gz
-      dest: /usr/local
-      remote_src: yes
+  # - name: extract tomcat packages
+  #   unarchive:  
+  #     src: /usr/local/{{tomcat_package}}.tar.gz
+  #     dest: /usr/local
+  #     remote_src: yes
 
 
-  - name: start tomcat services
-    shell: nohup /usr/local/{{tomcat_package}}/bin/startup.sh
+  # - name: start tomcat services
+  #   shell: nohup /usr/local/{{tomcat_package}}/bin/startup.sh
 
