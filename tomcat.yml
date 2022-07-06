@@ -22,7 +22,7 @@
        dest: /usr/local
 
   - name: extract tomcat packages
-     unarchive:  
+    unarchive:  
        src: /usr/local/{{tomcat_package}}.tar.gz
        dest: /usr/local
        remote_src: yes
