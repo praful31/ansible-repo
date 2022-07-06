@@ -30,3 +30,16 @@
   - name: start tomcat services
     shell: nohup /usr/local/{{tomcat_package}}/bin/startup.sh
 
+#  nohup cmd is use for start tomcat in Background Not on Portal
+
+#  Run Following cmd to check tomcat server is run or not on Nodes
+#        cd /usr/local/
+#    37  ls
+#    38  cd apache-tomcat-8.5.81
+#    39  ls
+#    40  ll
+#    41  ps -ef | grep tomcat
+
+# And Run On Google 
+# Copy and Paste Public ip Of Node with 8080
+# http://54.179.30.239:8080/ 
