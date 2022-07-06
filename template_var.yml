@@ -3,9 +3,8 @@
   hosts: all
   become: yes
   vars:
-    demo: ansible
+    demo: ansible:{{demo}}
   tasks:
     template:
     src: simaple.yml
     dest: /mnt
-    
