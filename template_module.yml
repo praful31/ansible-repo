@@ -4,6 +4,6 @@
   become: 1
   tasks: 
     - template:
-        src: sample.yml
-        dest: /mnt
+      src: sample.yml
+      dest: /mnt
 

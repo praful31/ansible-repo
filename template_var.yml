@@ -5,6 +5,6 @@
   vars:
     demo: ansible:{{demo}}
   tasks:
-    template:
+    - template:
       src: simaple.yml
       dest: /mnt
