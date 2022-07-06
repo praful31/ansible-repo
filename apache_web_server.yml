@@ -1,3 +1,4 @@
+# Write a script to install web server and exicute it through Ansible-playbook
 ---
 - name: Playbook
   hosts: all
@@ -17,5 +18,5 @@
           state: restarted
           enabled: yes
 
-        
+  # Add http and https port in security group of Nodes      
       
