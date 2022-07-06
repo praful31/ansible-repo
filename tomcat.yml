@@ -4,7 +4,7 @@
   become: true
   vars: 
     tomcat_url: https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.81/bin/apache-tomcat-8.5.81.tar.gz
-    tomcat_package: apache-tomcat-8.5.81.tar.gz
+    tomcat_package: apache-tomcat-8.5.81
   tasks: 
   - name: Update repos
     yum:
@@ -23,7 +23,7 @@
 
   - name: extract tomcat packages
     unarchive:  
-       src: "/usr/local/{{tomcat_package}}"
+       src: "/usr/local/{{tomcat_package}}.tar.gz"
        dest: /usr/local
        remote_src: yes
 
