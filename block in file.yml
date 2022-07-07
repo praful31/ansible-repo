@@ -1,0 +1,14 @@
+---
+- name: Block in File Playbook
+  hosts: all
+  become: true
+  tasks:
+    - blockinfile: 
+        path: /etc/httpd/conf.d/demo.conf
+        create: yes
+        block:  |
+          <virtualhost *:80>
+          servername localhost
+          documentroot /var/www/html
+          </virtualhost>
+          
