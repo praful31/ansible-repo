@@ -5,9 +5,11 @@
   tasks:
     - lineinfile:
         path: /etc/httpd/conf.d/demo.conf
-        # insertbefore: 
-        # line: Bye Nagpur
-        insertafter:
-        line:  Nagpur
+        # # insertbefore: 
+        # # line: Bye Nagpur
+        # insertafter:
+        # line: Nagpur
+        regexp:
+        line: Mubmai
     - debug:
         msg: "Message Add"
