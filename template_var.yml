@@ -6,5 +6,5 @@
     demo: ansible:{{demo}}
   tasks:
     - template:
-        src: simaple.yml
+        src: simple.yml
         dest: /mnt
