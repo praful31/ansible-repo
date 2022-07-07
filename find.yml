@@ -14,9 +14,9 @@
       debug:
         msg: "{{Bhushan}}"
 
-    - debug:       
-        msg: "{{item.path}}" 
-      loop: "{{Bhushan.files}}"
+    # - debug:       
+    #     msg: "{{item.path}}" 
+    #   loop: "{{Bhushan.files}}"
 
 
       # Delete Sorted File
