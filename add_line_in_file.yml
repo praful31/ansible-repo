@@ -4,9 +4,11 @@
   become: true
   tasks:
     - lineinfile:
-        path: /etc/httpd/conf.d/demo.conf
-        insertbefore: Mubmai
-        line: Bye Nagpur
+        path: /etc/httpd/lineinfile.txt
+        create: yes
+        line: Nagpur
+
+        #insertbefore: Mubmai
         # insertafter: Nagpur
         # line: Nagpur
         # regexp:
