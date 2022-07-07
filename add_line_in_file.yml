@@ -5,7 +5,7 @@
   tasks:
     - lineinfile:
         path: /etc/httpd/conf.d/demo.conf
-        insertbefore: 
+        insertbefore: BOF
         line: Hi Nagpur
         # insertafter:
         # line: Bye Nagpur
