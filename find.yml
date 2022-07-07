@@ -1,0 +1,15 @@
+---
+- name: Find In Playbook
+  hosts: all
+  become: true
+  tasks:
+    - name: Find or sorting
+      find:
+        path: /etc/ssh
+        file_type: file
+        pattern: "*pub"
+      register: Bhushan
+
+    - name: print sorted file
+      debug:
+        msg: "{{Bhushan}}"
