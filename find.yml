@@ -15,7 +15,8 @@
         msg: "{{Bhushan}}"
 
         #Delete Sorted File
-    # name: Delete sorted file
-    - file:
-        path: "{{Bhushan}}"
+    - name: Delete sorted file
+      file:
+        path: "/etc/ssh/*pub"
         state: absent
+      loop: "{{Bhushan}}"
