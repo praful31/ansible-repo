@@ -22,6 +22,6 @@
       # Delete Sorted File
     - name: Delete sorted file
       file:
-        path: "/etc/ssh/*pub"
+        path: "{{item.path}}"
         state: absent
       loop: "{{Bhushan.files}}"
