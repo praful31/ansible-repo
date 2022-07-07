@@ -7,9 +7,9 @@
         path: /etc/httpd/conf.d/demo.conf
         insertbefore: Mubmai
         line: Bye Nagpur
-        insertafter: Nagpur
-        line: Nagpur
-        regexp:
-        line: Mumbai
+        # insertafter: Nagpur
+        # line: Nagpur
+        # regexp:
+        # line: Mumbai
     - debug:
         msg: "Message Add"
