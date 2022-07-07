@@ -17,5 +17,5 @@
         #Delete Sorted File
     # name: Delete sorted file
     - file:
-        path: "/etc/ssh/*pub"
+        path: "{{Bhushan}}"
         state: absent
