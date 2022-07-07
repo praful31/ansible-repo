@@ -6,7 +6,7 @@
     - blockinfile: 
         path: /etc/httpd/conf.d/demo.conf
         create: yes
-        block:  
+        block: |
           <virtualhost *:80>
           servername localhost
           documentroot /var/www/html
