@@ -14,8 +14,12 @@
       debug:
         msg: "{{Bhushan}}"
 
+    - debug:       
+        msg: "{{item.path}}" 
+      loop: "{{out.files}}"
 
-        #Delete Sorted File
+
+      # Delete Sorted File
     - name: Delete sorted file
       file:
         path: "/etc/ssh/*pub"
