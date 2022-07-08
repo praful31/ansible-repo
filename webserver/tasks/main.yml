@@ -26,11 +26,13 @@
     src: webserver/files/ws.conf
     dest: /etc/httpd/conf.d/ws.conf
 
+  notify:
+    - restart httpd
+    
 - name: start and enableing httpd service
   service:
     name: httpd
     state: started
     enabled: yes
 
-  - notify:
-      restart httpd
+  
