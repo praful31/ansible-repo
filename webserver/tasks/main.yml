@@ -22,10 +22,9 @@
     remote_src: true
 
 - name: Copy Config File
-  template:
+  copy:
     src: /webserver/Files/ws.conf
     dest: etc/httpd/conf.d/ws.conf
-    remote_src: true
 
 - name: Start And Enable httpd service
   service:
