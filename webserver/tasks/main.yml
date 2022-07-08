@@ -2,7 +2,22 @@
 # tasks file for webserver
 - name: Install Package
   package: 
-    name: httpd
+    name: httpd 
     state: latest
 
+- name: Download Web Server or CSS Template
+  get_url:
+    url: https://www.free-css.com/assets/files/free-css-templates/download/page280/sungla.zip
+    dest: /var/www/html
+
+- name: Install Package Unzip
+  package:
+    name: unzip
+    state: latest
+
+- name: Extracting Zip File
+  unarchive:
+    src: /var/www/html/sungla.zip
+    dest: /var/www/html/
+    remote_src: true
     
