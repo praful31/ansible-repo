@@ -30,7 +30,7 @@
   service:
     name: httpd
     state: started
-    enabled: true
+    enabled: yes
 
   notify:
     - restart httpd
