@@ -27,10 +27,10 @@
     dest: /etc/httpd/conf.d
 
 - name: restart httpd
-    service:
-      name: httpd
-      state: restarted
-      enabled: yes
+  service:
+    name: httpd
+    state: restarted
+    enabled: yes
 
   notify:
     - restart httpd
