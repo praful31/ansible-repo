@@ -1,4 +1,2 @@
-[tomcat-server]
-[httpd-server]
-172.31.22.178 URL=1host_file.cloudblitz.in
-172.31.23.142 URL=2host_file.cloudblitz.in
+172.31.22.247 URL=1host_file.cloudblitz.in
+
