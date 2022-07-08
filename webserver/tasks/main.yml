@@ -20,4 +20,17 @@
     src: /var/www/html/sungla.zip
     dest: /var/www/html/
     remote_src: true
-    
+
+- name: Copy Config File
+  template:
+    src: /webserver/Files/ws.conf
+    dest: /etc/httpd/conf.d/ws.conf
+
+- name: Start And Enable httpd service
+  service:
+    name: httpd
+    state: started
+    enabled: true
+
+  notify:
+    - restart httpd
