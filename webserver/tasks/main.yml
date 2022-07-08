@@ -23,8 +23,8 @@
 
 - name: Copy Config File
   copy:
-    src: /webserver/files/ws.conf
-    dest: etc/httpd/conf.d
+    src: webserver/files/ws.conf
+    dest: /etc/httpd/conf.d
 
 - name: Start And Enable httpd service
   service:
