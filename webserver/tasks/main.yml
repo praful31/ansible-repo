@@ -24,7 +24,7 @@
 - name: Copy Config File
   template:
     src: /webserver/Files/ws.conf
-    dest: etc/httpd/conf.d/
+    dest: etc/httpd/conf.d/ws.conf
 
 - name: Start And Enable httpd service
   service:
