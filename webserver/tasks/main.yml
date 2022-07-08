@@ -1,2 +1,8 @@
 ---
 # tasks file for webserver
+- name: Install Package
+  package: 
+    name: httpd
+    state: latest
+
+    
