@@ -29,7 +29,7 @@
 - name: start and enableing httpd service
   service:
     name: httpd
-    status: started
+    state: started
     enabled: true
 
   notify:
