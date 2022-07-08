@@ -2,6 +2,6 @@
 - name: Role Playbook Called
   hosts: all
   become: true
+  remote_src: true
   roles:
     - webserver
-    
