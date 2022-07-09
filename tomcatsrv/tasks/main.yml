@@ -1,2 +1,16 @@
 ---
 # tasks file for tomcatsrv
+- name: Update Repos On Node
+  apt:
+    name: "*"
+    state: latest
+
+- name: Install Packages
+    apt:
+      name: "{{item}}"
+      state: latest
+    loop:
+      - java-1.8.0-openjdk
+      - unzip  
+
+    
