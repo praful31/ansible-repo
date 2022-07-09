@@ -27,7 +27,7 @@
     dest: /etc/httpd/conf.d/ws.conf
 
 - name: start and enableing httpd service
-  service:
+  systemd:
     name: httpd
     state: started
     enabled: yes
