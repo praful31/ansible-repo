@@ -21,6 +21,10 @@
     dest: /usr/share/nginx/html/
     remote_src: true
 
+ - name: Insert Index Page
+    template:
+      src: /usr/share/nginx/html/brandon/index.html
+      dest: /usr/share/nginx/html/index.html
 # - name: Copy Configuration File
 #   copy:
 #     src: apache2srv/files/ws.conf
