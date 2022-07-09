@@ -2,7 +2,7 @@
 # tasks file for webserver
 - name: Install Package
   package: 
-    name: httpd 
+    name: apache2 
     state: latest
 
 - name: Download Web Server or CSS Template
@@ -31,7 +31,7 @@
 
 - name: start and enableing httpd service
   service:
-    name: httpd
+    name: apache2
     state: started
     enabled: yes
 
