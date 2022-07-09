@@ -5,20 +5,9 @@
     name: "*"
     state: latest
 
-- name: installing java env
-  apt:
+- name: install java OpenJDK
+  apt: 
+    name: java-1.8.0-openjdk
     state: present
-    name: "{{ item }}"
-  loop:
-    - openjdk-8-jdk
-    - unzip
-    
-# - name: Install Packages
-#   apt:
-#     name: "{{item}}"
-#     state: latest
-#   loop:
-#     - openjdk-8-jdk
-#     - unzip  
 
     
