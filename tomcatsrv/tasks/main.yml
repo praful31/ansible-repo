@@ -12,6 +12,6 @@
     state: latest
   loop:
       - unzip
-      - default-jdk
+      - openjdk-8-jdk
     
     
