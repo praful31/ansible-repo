@@ -34,7 +34,7 @@
 
 # run the catalina
 - name: start tomcat application servers
-  command: /mnt/apache-tomcat-8.5.81/bin/catalina.sh
+  command: /mnt/apache-tomcat-8.5.81/bin/catalina.sh start
 
   
         
