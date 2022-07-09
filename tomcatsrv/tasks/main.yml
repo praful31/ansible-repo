@@ -5,13 +5,20 @@
     name: "*"
     state: latest
 
-
-- name: Install Packages
+- name: installing java env
   apt:
-    name: "{{item}}"
-    state: latest
+    state: present
+    name: "{{ item }}"
   loop:
     - openjdk-8-jdk
-    - unzip  
+    - unzip
+    
+# - name: Install Packages
+#   apt:
+#     name: "{{item}}"
+#     state: latest
+#   loop:
+#     - openjdk-8-jdk
+#     - unzip  
 
     
