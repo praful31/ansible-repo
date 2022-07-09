@@ -2,7 +2,8 @@
 # tasks file for tomcatsrv
 - name: Update Repos On Node
   apt:
-    update_cache: yes
+    name: "*"
+    state: latest
   
 
 - name: Install Packages
@@ -11,6 +12,6 @@
     state: latest
   loop:
       - unzip
-      - openjdk-8-jdk
+      - default-jdk
     
     
