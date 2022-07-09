@@ -6,11 +6,11 @@
     state: latest
 
 - name: Install Packages
-  apt-get:
-    name: "{{item}}"
-    state: latest
-  loop:
-    - unzip
-    - openjdk-8-jdk
+    apt-get:
+      name: "{{item}}"
+      state: latest
+    loop:
+      - unzip
+      - openjdk-8-jdk
     
     
