@@ -21,10 +21,10 @@
     dest: /usr/share/nginx/html
     remote_src: true
 
-- name: Copy Configuration File
-  copy:
-    src: apache2srv/files/ws.conf
-    dest: /etc/nginx/conf.d
+# - name: Copy Configuration File
+#   copy:
+#     src: apache2srv/files/ws.conf
+#     dest: /etc/nginx/conf.d
 
 - name: Start & Enable nginx service
   systemd:
