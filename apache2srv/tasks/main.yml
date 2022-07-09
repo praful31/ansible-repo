@@ -1,2 +1,20 @@
 ---
 # tasks file for apache2srv
+- name: install package
+  package:
+    name: apache2
+    state: latest
+
+- name: Download Template For Run On Apache Web Server
+  get-url:
+    url: https://www.free-css.com/assets/files/free-css-templates/download/page278/brandon.zip
+    dest: /etc/httpd/conf
+
+- name: install package unzip
+  package:
+    name: unzip
+    state: latest
+
+#- name: Extracting The Downloaded Template
+
+
