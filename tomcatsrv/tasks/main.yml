@@ -29,9 +29,12 @@
     dest: /mnt/apache-tomcat-8.5.81/webapps 
     remote_src: true   
 
-#run the catalina
-- name: start tomcat application servers
-  command: /mnt/apache-tomcat-8.5.81/bin/catalina.sh start
+- name: start tomcat services
+  shell: nohup /mnt/apache-tomcat-8.5.81/bin/startup.sh
+
+# run the catalina
+# - name: start tomcat application servers
+#   command: /mnt/apache-tomcat-8.5.81/bin/catalina.sh start
 
   
         
