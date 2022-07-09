@@ -27,7 +27,7 @@
     dest: /etc/nginx/conf.d
 
 - name: Start & Enable nginx service
-  syetemd:
+  systemd:
     name: nginx
     state: started
     enabled: true
