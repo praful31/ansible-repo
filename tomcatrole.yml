@@ -1,1 +1,6 @@
-
+---
+- name: Assign Role 
+  hosts: all
+  become: true
+  roles: 
+    - tomcatsrv
