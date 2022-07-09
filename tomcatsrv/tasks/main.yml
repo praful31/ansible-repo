@@ -26,5 +26,6 @@
 - name: move stydent.war file
   copy:
    src: /home/ubuntu/student.war 
-   dest: /mnt/apache-tomcat-8.5.81/webapps    
+   dest: /mnt/apache-tomcat-8.5.81/webapps 
+   remote_src: true   
     
