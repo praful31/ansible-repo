@@ -1,8 +1,8 @@
 ---
 # tasks file for apache2srv
-- name: install package
-  package:
-    name: apache2
+- name: Install Package
+  package: 
+    name: apache2 
     state: latest
 
 - name: Download Template For Run On Apache Web Server
