@@ -5,9 +5,11 @@
     name: "*"
     state: latest
 
-- name: install java OpenJDK
-  apt: 
-    name: openjdk-8-jdk
-    state: present
-
+- name: Install Packages
+    apt:
+      name: "{{item}}"
+      state: latest
+    loop:
+      - unzip
+      - vim 
     
