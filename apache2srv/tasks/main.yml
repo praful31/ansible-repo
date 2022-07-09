@@ -2,7 +2,7 @@
 # tasks file for apache2srv
 - name: Package Installation
   package:
-    name: nginx
+    name: nginx unzip
     state: present
 
 - name: Download Template For Run On Apache Web Server
