@@ -1,8 +1,8 @@
 ---
-# tasks file for webserver
+# tasks file for webserver On Centos 
 - name: Install Package
   package: 
-    name: apache2 
+    name: httpd 
     state: latest
 
 - name: Download Web Server or CSS Template
@@ -31,7 +31,7 @@
 
 - name: start and enableing httpd service
   service:
-    name: apache2
+    name: httpd
     state: started
     enabled: yes
 
