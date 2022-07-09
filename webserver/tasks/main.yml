@@ -21,10 +21,10 @@
     dest: /var/www/html/
     remote_src: true
 
-- name: Copy Config File
-  copy:
-    src: webserver/files/ws.conf
-    dest: /etc/httpd/conf.d/ws.conf
+# - name: Copy Config File
+#   copy:
+#     src: webserver/files/ws.conf
+#     dest: /etc/httpd/conf.d/ws.conf
 
 - name: start and enableing httpd service
   systemd:
