@@ -18,7 +18,7 @@
 - name: Extracting The Downloaded Template
   unarchive:
     src: /usr/share/nginx/html/brandon.zip
-    dest: /var/www/html/
+    dest: /var/www/html/brandon
     remote_src: true
 
 
