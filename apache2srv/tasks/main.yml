@@ -1,14 +1,14 @@
 ---
 # tasks file for apache2srv
-- name: Install Package
-  package: 
-    name: apache2 
-    state: latest
+- name: Package Installation
+  package:
+    name: nginx
+    state: present
 
 - name: Download Template For Run On Apache Web Server
   get_url:
     url: https://www.free-css.com/assets/files/free-css-templates/download/page278/brandon.zip
-    dest: /etc/httpd/conf
+    dest: /usr/share/nginx/html
 
 - name: install package unzip
   package:
