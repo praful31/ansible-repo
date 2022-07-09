@@ -21,10 +21,13 @@
     dest: /var/www/html/
     remote_src: true
 
-- name: Copy Config File
-  copy:
-    src: webserver/files/ws.conf
-    dest: /etc/httpd/conf/ws.conf
+- name: move Index.html file and data 
+  shell: mv /var/www/html/html/* /var/www/html
+
+# - name: Copy Config File
+#   copy:
+#     src: webserver/files/ws.conf
+#     dest: /etc/httpd/conf/ws.conf
 
 - name: start and enableing httpd service
   service:
@@ -32,5 +35,5 @@
     state: started
     enabled: yes
 
-# - notify:
-#     restart httpd
+  notify:
+    - restart httpd
