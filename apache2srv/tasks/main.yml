@@ -38,8 +38,8 @@
 
 - name: Insert Index Page
   template:
-    src: /usr/share/nginx/html/brandon/index.html
-    dest: /usr/share/nginx/html/index.html
+    src: /usr/share/nginx/html/brandon
+    dest: /usr/share/nginx/html
 
 
 
