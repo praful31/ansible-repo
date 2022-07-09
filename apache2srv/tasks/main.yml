@@ -33,7 +33,7 @@
     enabled: true
 
 - notify:
-    restart nginx
+  restart nginx
 
 
 
