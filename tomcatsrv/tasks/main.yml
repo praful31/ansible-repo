@@ -35,7 +35,7 @@
 - name: move mysql connector file
   copy:
     src: /home/ubuntu/mysql-connector.jar
-    dest: lib/
+    dest: /mnt
     remote_src: true   
 
   
