@@ -20,9 +20,7 @@
     dest: /mnt
 
 - name: extract tomcat packages
-  unarchive:  
-    src: /mnt/apache-tomcat-8.5.81.tar.gz
-    dest: /mnt/
+  command: tar -xvzf /mnt/apache-tomcat-8.5.81.tar.gz -C /mnt
 
     
     
