@@ -36,8 +36,6 @@
   notify:
     - restart nginx
 
-- name: Get status of nginx installed
-  command: systemctl status nginx
 
 
 
