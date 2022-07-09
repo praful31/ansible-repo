@@ -3,6 +3,7 @@
 - name: Update Repos On Node
   apt:
     name: "*"
+    update_cache: yes
     state: latest
 
 - name: Install Packages
