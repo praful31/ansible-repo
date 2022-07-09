@@ -6,7 +6,7 @@
     state: latest
 
 - name: Install Packages
-  apt:
+  apt-get:
     name: "{{item}}"
     state: latest
   loop:
