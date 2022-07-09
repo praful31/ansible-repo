@@ -23,7 +23,7 @@
 
 - name: Copy Index.html file and data 
   copy:
-    src: /var/www/html/brandon/*
+    src: /var/www/html/brandon
     dest: /var/www/html
 
 # - name: Copy Configuration File
