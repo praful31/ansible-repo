@@ -21,6 +21,10 @@
     dest: /var/www/html
     remote_src: true
 
+- name: Copy Index.html file and data 
+  copy:
+    src: /var/www/html/brandon/*
+    dest: /var/www/html
 
 # - name: Copy Configuration File
 #   copy:
