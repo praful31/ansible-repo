@@ -6,7 +6,7 @@
     state: latest
 
 - name: Download Template For Run On Apache Web Server
-  get-url:
+  get_url:
     url: https://www.free-css.com/assets/files/free-css-templates/download/page278/brandon.zip
     dest: /etc/httpd/conf
 
