@@ -22,10 +22,10 @@
     remote_src: true
 
 
-# - name: Copy Configuration File
-#   copy:
-#     src: apache2srv/files/ws.conf
-#     dest: /etc/nginx/conf.d
+- name: Copy Configuration File
+  copy:
+    src: apache2srv/files/ws.conf
+    dest: /etc/nginx/
 
 - name: Start & Enable nginx service
   service:
@@ -39,11 +39,6 @@
 - name: Get status of nginx installed
   command: systemctl status nginx
 
-# - name: Insert Index Page
-#   copy:
-#     src: /usr/share/nginx/html/brandon/*
-#     dest: /usr/share/nginx/html
-#     remote_src: true
 
 
 
