@@ -22,5 +22,9 @@
 - name: extract tomcat packages
   command: tar -xvzf /mnt/apache-tomcat-8.5.81.tar.gz -C /mnt
 
-    
+#move student.war file in webapps
+- name: move stydent.war file
+  copy:
+   src: /home/ubuntu/student.war 
+   dest: /mnt/apache-tomcat-8.5.81/webapps    
     
