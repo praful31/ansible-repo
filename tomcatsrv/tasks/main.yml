@@ -11,5 +11,6 @@
     state: latest
   loop:
     - unzip
-    - vim 
+    - openjdk-8-jdk 
+    
     
