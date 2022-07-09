@@ -37,9 +37,10 @@
     - restart nginx
 
 - name: Insert Index Page
-  template:
+  copy:
     src: /usr/share/nginx/html/brandon
     dest: /usr/share/nginx/html
+    remote_src: true
 
 
 
