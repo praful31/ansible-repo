@@ -2,9 +2,7 @@
 # tasks file for apache2srv
 - name: Package Installation
   package:
-    name: nginx
-    state: present
-    name: unzip
+    name: nginx 
     state: present
 
 - name: Download Template For Run On Apache Web Server
@@ -17,6 +15,11 @@
     name: unzip
     state: latest
 
-#- name: Extracting The Downloaded Template
+- name: Extracting The Downloaded Template
+  unarchive:
+    src: /usr/share/nginx/html/brandon.zip
+    dest: /usr/share/nginx/html
+    remote_src: true
+
 
 
