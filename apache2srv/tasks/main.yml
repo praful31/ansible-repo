@@ -18,14 +18,14 @@
 - name: Extracting The Downloaded Template
   unarchive:
     src: /usr/share/nginx/html/brandon.zip
-    dest: /var/www/html/brandon
+    dest: /var/www/html
     remote_src: true
 
 
-- name: Copy Configuration File
-  copy:
-    src: apache2srv/files/ws.conf
-    dest: /etc/nginx/
+# - name: Copy Configuration File
+#   copy:
+#     src: apache2srv/files/ws.conf
+#     dest: /etc/nginx/
 
 - name: Start & Enable nginx service
   service:
