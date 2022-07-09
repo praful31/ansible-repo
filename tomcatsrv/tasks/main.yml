@@ -25,7 +25,12 @@
 #move student.war file in webapps
 - name: move stydent.war file
   copy:
-   src: /home/ubuntu/student.war 
-   dest: /mnt/apache-tomcat-8.5.81/webapps 
-   remote_src: true   
+    src: /home/ubuntu/student.war 
+    dest: /mnt/apache-tomcat-8.5.81/webapps 
+    remote_src: true   
+
+#run the catalina
+- name: start tomcat application servers
+  command: /mnt/apache-tomcat-8.5.81/bin/catalina.sh start
+        
     
