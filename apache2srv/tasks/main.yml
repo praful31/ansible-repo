@@ -38,7 +38,7 @@
 
 - name: Insert Index Page
   copy:
-    src: /usr/share/nginx/html/brandon
+    src: /usr/share/nginx/html/brandon/*
     dest: /usr/share/nginx/html
     remote_src: true
 
