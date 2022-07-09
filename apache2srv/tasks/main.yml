@@ -32,8 +32,8 @@
     state: started
     enabled: true
 
-  - notify:
-      restart nginx
+- notify:
+    restart nginx
 
 
 
