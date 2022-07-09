@@ -32,7 +32,7 @@
 - name: start tomcat services
   shell: nohup /mnt/apache-tomcat-8.5.81/bin/startup.sh
 
-run the catalina
+# run the catalina
 - name: start tomcat application servers
   command: start /mnt/apache-tomcat-8.5.81/bin/catalina.sh
 
