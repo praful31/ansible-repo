@@ -18,7 +18,7 @@
 - name: Extracting The Downloaded Template
   unarchive:
     src: /usr/share/nginx/html/brandon.zip
-    dest: /usr/share/nginx/html
+    dest: /usr/share/nginx/html/
     remote_src: true
 
 # - name: Copy Configuration File
