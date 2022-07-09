@@ -37,7 +37,7 @@
     - restart nginx
 
 - name: Get status of nginx installed
-    command: systemctl status nginx
+  command: systemctl status nginx
 
 # - name: Insert Index Page
 #   copy:
